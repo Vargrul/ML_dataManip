@@ -1,5 +1,6 @@
 import os
 import shutil
+import argparse
 
 def exif_explorer(folder_path):
     pass
@@ -61,6 +62,18 @@ def __clean_dir(dir):
     return
 
 if __name__ == "__main__":
+    # Setup Argpasser
+    parser = argparse.ArgumentParser(description='Filter data for the MIRFLICKR dataset.')
+    parser.add_argument('tagsdir', help='directory of the tags_raw dir.')
+    parser.add_argument('inimgdir', help='input directory of images corresponding to the tags.')
+    parser.add_argument('outimgdir', help='output directory for filtered images.')
+
+    args = parser.parse_args()
+
+    print(args.tagsdir)
+
+    pass
+
     # setup variables
     tag_folder_path = 'mirflickr-25k/meta/tags_raw/'
     # tags_inc = ['explore', 'nature', 'geotagged', 'landscape', 'street', 'explored', 'city', ]
