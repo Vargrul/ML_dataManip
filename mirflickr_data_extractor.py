@@ -35,7 +35,7 @@ def tag_filter(folder_path, tags_include, tags_exclude):
 def __tag_evaluator_any(files, tags, exclude=False):
     filtered_files = []
     for f in files:
-        with open(f) as file:
+        with open(f, 'r', encoding='utf-8') as file:
             contains_tag =  False
             for line in file:
                 line = line.strip().lower()
@@ -83,7 +83,7 @@ def explorer_tags(folder_path):
 
     # read the tags and count
     for f in files:
-        with open(f) as file:
+        with open(f, 'r', encoding='utf-8') as file:
             for line in file:
                 line = line.strip().lower()
                 if line in counter:
@@ -153,6 +153,7 @@ if __name__ == "__main__":
     output_path = args.out
 
     if args.explortags:
+        print(tag_folder_path)
         explorer_tags(tag_folder_path)
     else:
         # setup variables
