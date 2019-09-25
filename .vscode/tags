@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+__clean_dir	../mirflickr_data_extractor.py	/^def __clean_dir(dir):$/;"	kind:function	line:53
+__tag_evaluator_any	../mirflickr_data_extractor.py	/^def __tag_evaluator_any(files, tags, exclude=False):$/;"	kind:function	line:31
+args	../mirflickr_data_extractor.py	/^    args = parser.parse_args()$/;"	kind:variable	line:145
+exif_explorer	../mirflickr_data_extractor.py	/^def exif_explorer(folder_path):$/;"	kind:function	line:6
+explorer_exif	../mirflickr_data_extractor.py	/^def explorer_exif(folder_path):$/;"	kind:function	line:102
+explorer_tags	../mirflickr_data_extractor.py	/^def explorer_tags(folder_path):$/;"	kind:function	line:68
+files	../mirflickr_data_extractor.py	/^        files = tag_filter(tag_folder_path, tags_inc, tags_exc)$/;"	kind:variable	line:168
+img_folder_path	../mirflickr_data_extractor.py	/^    img_folder_path = getattr(args,'in')$/;"	kind:variable	line:148
+mirflickr_data_extractor.py	../mirflickr_data_extractor.py	1;"	kind:file	line:1
+output_path	../mirflickr_data_extractor.py	/^    output_path = args.out$/;"	kind:variable	line:149
+parser	../mirflickr_data_extractor.py	/^    parser = argparse.ArgumentParser(description='Filter data for the MIRFLICKR dataset.')$/;"	kind:variable	line:137
+tag_filter	../mirflickr_data_extractor.py	/^def tag_filter(folder_path, tags_include, tags_exclude):$/;"	kind:function	line:9
+tag_folder_path	../mirflickr_data_extractor.py	/^    tag_folder_path = args.tagdir$/;"	kind:variable	line:147
+tags_inc	../mirflickr_data_extractor.py	/^        tags_inc = ['indoor', 'outdoor']$/;"	kind:variable	line:157
