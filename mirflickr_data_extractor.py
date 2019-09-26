@@ -160,6 +160,7 @@ if __name__ == "__main__":
         # tag_folder_path = 'mirflickr-25k/meta/tags_raw/'
         # # tags_inc = ['explore', 'nature', 'geotagged', 'landscape', 'street', 'explored', 'city', ]
         tags_inc = ['indoor', 'outdoor']
+        tags_exc = []
         # tags_exc = ['sky', 'clouds', 'swirl', 'bw', 'macro', 'blackandwhite', 'abstract', 'reflection']
 
         # exif_folder_path = 'mirflickr-25k/meta/exif_raw/'
@@ -172,6 +173,7 @@ if __name__ == "__main__":
         # Filter files
         files = tag_filter(tag_folder_path, tags_inc, tags_exc)
 
+        print(files)
         print('Number of images found: ' + str(len(files)))
 
         # Copy files
